@@ -1,0 +1,2 @@
+rootProject.name='JnuMokChun'
+include ':app'

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateIdActivity"
+    android:padding="20sp"
+    android:background="@drawable/backgroundcolor"
+    android:orientation="horizontal"
+
+    >
+
+    <ImageView
+        android:id="@+id/createidback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        />
+
+    <TextView
+        android:id="@+id/createtext1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GeomdanMoKChun Church"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="italic"
+        />
+    <TextView
+        android:id="@+id/createtext2"
+        app:layout_constraintTop_toTopOf="@id/createtext1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mockcheon Damoim"
+        android:textSize="32sp"
+        android:textColor="#000"
+        android:textStyle="italic"
+        />
+
+        <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디"
+        android:textSize="20dp"
+        android:layout_marginTop="210dp"
+        android:textColor="#000"
+        android:textStyle=""
+
+
+        />
+
+            <LinearLayout
+                android:id="@+id/idtext"
+                app:layout_constraintStart_toEndOf="@id/id"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/loginfild"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="204dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginEnd="20dp"
+                >
+                <EditText
+                    android:id="@+id/User_ID"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="20dp"
+                    android:background="@android:color/transparent"
+                    android:hint="gildong123"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:imeOptions="actionDone"
+                    />
+
+            </LinearLayout>
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/id"
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호"
+        android:textSize="20dp"
+        android:layout_marginTop="60dp"
+        android:textColor="#000"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/passwordtext"
+        app:layout_constraintStart_toEndOf="@id/password"
+        app:layout_constraintTop_toTopOf="@id/idtext"
+        android:background="@drawable/loginfild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="20dp"
+        >
+        <EditText
+            android:id="@+id/User_PASSWORD"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:background="@android:color/transparent"
+            android:hint="hong123@"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            />
+    </LinearLayout>
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/password"
+        android:id="@+id/chpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호확인"
+        android:textSize="20dp"
+        android:layout_marginTop="60dp"
+        android:textColor="#000"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/checkpasswordtext"
+        app:layout_constraintStart_toEndOf="@id/chpassword"
+        app:layout_constraintTop_toTopOf="@id/passwordtext"
+        android:background="@drawable/loginfild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="20dp"
+        >
+
+        <EditText
+            android:id="@+id/User_PASSWORD_CHECK"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:hint="hong123@"
+            android:textSize="20dp"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            />
+    </LinearLayout>
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/chpassword"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름"
+        android:textSize="20dp"
+        android:layout_marginTop="60dp"
+        android:textColor="#000"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/nametext"
+        app:layout_constraintStart_toEndOf="@id/name"
+        app:layout_constraintTop_toTopOf="@id/checkpasswordtext"
+        android:background="@drawable/loginfild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="20dp"
+        >
+        <EditText
+            android:id="@+id/User_NAME"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:background="@android:color/transparent"
+            android:hint="홍길동"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            />
+    </LinearLayout>
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/name"
+        android:id="@+id/bithday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="생년월일"
+        android:textSize="20dp"
+        android:layout_marginTop="60dp"
+        android:textColor="#000"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/bithdaytext"
+        app:layout_constraintStart_toEndOf="@id/bithday"
+        app:layout_constraintTop_toTopOf="@id/nametext"
+        android:background="@drawable/loginfild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="20dp"
+        >
+        <EditText
+            android:id="@+id/User_AGE"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:background="@android:color/transparent"
+            android:hint="901015"
+            android:inputType="number"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            />
+    </LinearLayout>
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bithday"
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전화번호"
+        android:textSize="20dp"
+        android:layout_marginTop="60dp"
+        android:textColor="#000"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/numbertext"
+        app:layout_constraintStart_toEndOf="@id/number"
+        app:layout_constraintTop_toTopOf="@id/bithdaytext"
+        android:background="@drawable/loginfild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="20dp"
+        >
+        <EditText
+            android:id="@+id/User_Phone"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:background="@android:color/transparent"
+            android:hint="01012345678"
+            android:inputType="number"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            />
+    </LinearLayout>
+
+   <Button
+       android:id="@+id/create_ok"
+       android:layout_marginBottom="50dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@drawable/logoutbutton"
+       android:text="확인"
+       android:textColor="#000"
+       android:textStyle="bold"
+       />
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
