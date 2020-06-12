@@ -15,7 +15,7 @@ class QuertionListActivity : AppCompatActivity() {
 
     // 데이터를 담을 그릇 즛 배열
     var modelList = ArrayList<Quertionlistmodel>()
-    //lateinit나중에 값을 넣겠다는 의마
+    //lateinit나중에 값을 넣겠다는 의미
     private lateinit var  QuertionAdapter:QuertionAdapter
 
     //뷰가 화면에 그려질때때
